@@ -1,2 +1,9 @@
-# 2511500083-PWD-GB1J-25260
-Repository Latihan Pertemuan-1 sampai dengan Pertemuan-16 Matakuliah Pemrograman Web Dasar Kelompok GB1J Tahun Ajaran 2025/2026 Semester gasal
+# pertemuan-04
+
+NIM : 2511500083<br>
+Nama : Salsabilla Agustin<br>
+
+Hari ini, Rabu 16 Oktober 2025, saya belajar:
+<ol>
+  <li>copy-paste isi index.html (pertemuan-03) ke index.html (pertemuan-04)</li>
+</ol>  

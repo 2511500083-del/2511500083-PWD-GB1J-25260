@@ -38,7 +38,7 @@ footer{
   padding: 10px;
 }
 
-header li a:hover{
+header li a:hover {
   background-color: #85020d;
   border-radius: 6px;
   transition: background-color 0.3s ease; 

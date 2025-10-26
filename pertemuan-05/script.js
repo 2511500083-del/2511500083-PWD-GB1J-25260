@@ -1,5 +1,5 @@
 document.getElementById("menuToggle").addEventListener("click", function() {
-   document.querySelector("nav").classList.toggle("active");
+  document.querySelector("nav").classList.toggle("active");
 });
 
 document.querySelector("form").addEventListener("submit", function(e) {
@@ -17,14 +17,6 @@ document.querySelector("form").addEventListener("submit", function(e) {
      isValid = false;
    } else if (!/^[A-Za-z\s]+$/.test(nama.value)) {
      showError(nama, "Nama hanya boleh berisi huruf dan spasi.");
-     isValid = false;
-   }
-
-   if (email.value.trim() === "") {
-     showError(email, "Email wajib diisi.");
-     isValid = false;
-   } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
-     showError(email, "Format email tidal valid. Contoh: nama@gmail.com");
      isValid = false;
    }
 

@@ -2,6 +2,12 @@ document.getElementById("menuToggle").addEventListener("click", function () {
   const nav = document.querySelector("nav");
   nav.classList.toggle("active");
 
+
+  let dek = prompt("Mana adek a?");
+  console.log("Hallo juga dekk" + dek + "Hehe?");
+  document.getElementById("txtNama").value = dek;
+  document.getElementById("txtPesan").value = dek + "Kenalan dong";
+  
   if (nav.classList.contains("active")) {
     this.textContent = "\u2716";
   } else {

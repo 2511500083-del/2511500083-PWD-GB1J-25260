@@ -1,35 +1,43 @@
-document.getElementById("menuToggle").addEventListener("click", function() {
+document.getElementById("menuToggle").addEventListener("click", function () {
   document.querySelector("nav").classList.toggle("active");
 });
 
-document.querySelector("form").addEventListener("submit", function(e) {
-   const nama = document.getElementById("txtNama");
-   const email = document.getElementById("txtEmail");
-   const pesan = document.getElementById("txtPesan");
+document.querySelector("form").addEventListener("submit", function (e) {
+  const nama = document.getElementById("txtNama");
+  const email = document.getElementById("txtEmail");
+  const pesan = document.getElementById("txtPesan");
 
-   document.querySelectorAll(".error-msg").forEach(el => el.remove ());
-   [nama, email, pesan].forEach(el => el.style.border = "");
+  document.querySelectorAll(".error-msg").forEach(el => el.remove());
+  [nama, email, pesan].forEach(el => el.style.border = "");
 
-   let isValid = true;
+  let isValid = true;
 
-   if (nama.ariaValueMax.trim().length < 3) {
-     showError(nama, "Nama minimal 3 huruf dan tidak boleh kosong.");
-     isValid = false;
-   } else if (!/^[A-Za-z\s]+$/.test(nama.value)) {
-     showError(nama, "Nama hanya boleh berisi huruf dan spasi.");
-     isValid = false;
-   }
+  if (nama.value.trim().length < 3) {
+    showError(nama, "Nama minimal 3 huruf dan tidak boleh kosong.");
+    isValid = false;
+  } else if (!/^[A-Za-z\s]+$/.test(nama.value)) {
+    showError(nama, "Nama hanya boleh berisi huruf dan spasi.");
+    isValid = false;
+  }
 
-   if (pesan.value.trim().length < 10) {
-     showError(pesan, "Pesan minimal 10 karakter agar lebih jelas.");
-     isValid = false;
-   }
+  if (email.value.trim() === "") {
+    showError(email, "Email wajib diisi.");
+    isValid = false;
+  } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+    showError(email, "Format email tidak valid. Contoh: nama@mail.com");
+    isValid = false;
+  }
 
-   if (!isValid) {
-     e.preventDefault();
-   } else {
-     alert("Terima kasih, " + "!\nPesan Anda telah dikirim.");
-   }
+  if (pesan.value.trim().length < 10) {
+    showError(pesan, "Pesan minimal 10 karakter agar lebih jelas.");
+    isValid = false;
+  }
+
+  if (!isValid) {
+    e.preventDefault();
+  } else {
+    alert("Terima kasih, " + nama.value + "!\nPesan Anda telah dikirim.");
+  }
 });
 
 function showError(inputElement, message) {
@@ -60,23 +68,23 @@ function showError(inputElement, message) {
   alignErrorMessage(small, inputElement);
 }
 
-function alignErrorMessage(smaLLEL, inputEL) {
-   const isMobile = window.matchMedia("(max-width: 600px)").matches;
-   if (isMobile) {
-    smaLLEL.style.marginLeft = "0";
-    smaLLEL.style.width = "100%";
+function alignErrorMessage(smallEl, inputEl) {
+  const isMobile = window.matchMedia("(max-width: 600px)").matches;
+  if (isMobile) {
+    smallEl.style.marginLeft = "0";
+    smallEl.style.width = "100%";
     return;
-   }
+  }
 
-   const label = inputEL.closest("label");
-   if (!label) return;
+  const label = inputEl.closest("label");
+  if (!label) return;
 
-   const rectLabel = label.getBoundingClientRect();
-   const rectInput = inputEL.getBoundingClientRect();
-   const offsetLeft = Math.max(0, Math.round(rectInput.left - rectLabel.left));
+  const rectLabel = label.getBoundingClientRect();
+  const rectInput = inputEl.getBoundingClientRect();
+  const offsetLeft = Math.max(0, Math.round(rectInput.left - rectLabel.left));
 
-   smaLLEL.style.marginLeft = offsetLeft + "px";
-   smaLLEL.style.width = Math.round(rectInput.width) + "px";
+  smallEl.style.marginLeft = offsetLeft + "px";
+  smallEl.style.width = Math.round(rectInput.width) + "px";
 }
 
 window.addEventListener("resize", () => {

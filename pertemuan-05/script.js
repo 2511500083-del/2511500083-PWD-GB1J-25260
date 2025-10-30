@@ -88,16 +88,6 @@ window.addEventListener("resize", () => {
   }
 });
 
-
-
-  let dek = prompt("Mana adek a?");
-  console.log("Hallo juga dekk" + dek + "Hehe?");
-  document.getElementById("txtNama").value = dek;
-  document.getElementById("txtPesan").value = dek + "Kenalan dong";
-  
-
-  
-
 document.addEventListener("DOMContentLoaded", function () {
   const homeSection = document.getElementById("home");
   const ucapan = document.createElement("p");

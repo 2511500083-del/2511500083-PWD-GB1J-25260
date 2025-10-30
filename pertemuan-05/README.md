@@ -15,5 +15,6 @@ Hari ini, Kamis 23 Oktober 2025, saya belajar:
   <li>event klik pada tombol hamburger</li>
   <li>Menambahkan Skrip untuk form</li>
   <li>mengedit menu toogle</li>
-  <li>menambahkan DOM ke script.js</li> 
+  <li>menambahkan DOM ke script.js</li>
+  <li>menambahkan maksimal karakter pada pesan (script.js)</li> 
 </ol>  

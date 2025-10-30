@@ -13,4 +13,7 @@ Hari ini, Kamis 23 Oktober 2025, saya belajar:
   <li>styling nav menu mobile</li>
   <li>membuat script.js</li>
   <li>event klik pada tombol hamburger</li>
+  <li>Menambahkan Skrip untuk form</li>
+  <li>mengedit menu toogle</li>
+  <li>menambahkan DOM ke script.js</li> 
 </ol>  

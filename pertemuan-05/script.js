@@ -14,6 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
   ucapan.textContent = "Halo! Selamat datang di halaman saya!";
   homeSection.appendChild(ucapan);
 });
+
+document.getElementById("txtPesan").addEventListener("input", function () {
+  const panjang = this.value.length;
+  document.getElementById("charCount").textContent = panjang + "/200 karakter";
+});
 document.querySelector("form").addEventListener("submit", function (e) {
   const nama = document.getElementById("txtNama");
   const email = document.getElementById("txtEmail");

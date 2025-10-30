@@ -8,6 +8,7 @@ document.getElementById("menuToggle").addEventListener("click", function () {
   document.getElementById("txtNama").value = dek;
   document.getElementById("txtPesan").value = dek + "Kenalan dong";
   
+  
   if (nav.classList.contains("active")) {
     this.textContent = "\u2716";
   } else {

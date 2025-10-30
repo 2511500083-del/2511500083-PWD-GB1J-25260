@@ -81,7 +81,13 @@ window.addEventListener("resize", () => {
         const target = document.getElementById(small.dataset.forId);
         if (target) alignErrorMessage(small, target);
     });
+    if (nav.classList.contains("active")) {
+    this.textContent = "\u2716";
+  } else {
+    this.textContent = "\u2630";
+  }
 });
+
 
 
   let dek = prompt("Mana adek a?");
@@ -90,12 +96,7 @@ window.addEventListener("resize", () => {
   document.getElementById("txtPesan").value = dek + "Kenalan dong";
   
 
-  if (nav.classList.contains("active")) {
-    this.textContent = "\u2716";
-  } else {
-    this.textContent = "\u2630";
-  }
-});
+  
 
 document.addEventListener("DOMContentLoaded", function () {
   const homeSection = document.getElementById("home");

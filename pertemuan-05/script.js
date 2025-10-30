@@ -88,6 +88,7 @@ window.addEventListener("resize", () => {
   }
 });
 
+
 document.addEventListener("DOMContentLoaded", function () {
   const homeSection = document.getElementById("home");
   const ucapan = document.createElement("p");

@@ -19,7 +19,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
     showError(email, "Email wajib diisi.");
     isValid = false;
   } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
-    showError(email, "Format email tidak valid. Contoh: nama@mail.com");
+    showError(email, "Format email tidak valid. Contoh: nama@mail.com"); 
     isValid = false;
   }
   if (pesan.value.trim().length < 10) {

@@ -7,6 +7,13 @@ document.getElementById("menuToggle").addEventListener("click", function () {
     this.textContent = "\u2630";
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const homeSection = document.getElementById("home");
+  const ucapan = document.createElement("p");
+  ucapan.textContent = "Halo! Selamat datang di halaman saya!";
+  homeSection.appendChild(ucapan);
+});
 document.querySelector("form").addEventListener("submit", function (e) {
   const nama = document.getElementById("txtNama");
   const email = document.getElementById("txtEmail");

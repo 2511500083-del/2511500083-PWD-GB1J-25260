@@ -1,6 +1,12 @@
 document.getElementById("menuToggle").addEventListener("click", function () {
   const nav = document.querySelector("nav");
   nav.classList.toggle("active");
+
+  if (nav.classList.contains("active")) {
+    this.textContent = "\u2716";
+  } else {
+    this.textContent = "\u2630";
+  }
 });
 
 document.querySelector("form").addEventListener("submit", function (e) {
@@ -81,13 +87,7 @@ window.addEventListener("resize", () => {
         const target = document.getElementById(small.dataset.forId);
         if (target) alignErrorMessage(small, target);
     });
-    if (nav.classList.contains("active")) {
-    this.textContent = "\u2716";
-  } else {
-    this.textContent = "\u2630";
-  }
-});
-
+    
 
 document.addEventListener("DOMContentLoaded", function () {
   const homeSection = document.getElementById("home");
@@ -170,4 +170,3 @@ document.addEventListener("DOMContentLoaded", function () {
   setupCharCountLayout();
   window.addEventListener('resize', applyResponsiveLayout);
 });
-

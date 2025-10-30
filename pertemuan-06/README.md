@@ -8,4 +8,5 @@ Hari ini, Kamis 23 Oktober 2025, saya belajar:
   <li>skrip php hello world</li>
   <li>copy index.html, style.css, script.js (pertemuan-06)</li>
   <li>skrip php selamat datang</li>
+  <li>skrip variabel dan tipe data</li>
 </ol>  

@@ -11,4 +11,5 @@ Hari ini, Kamis 23 Oktober 2025, saya belajar:
   <li>skrip variabel dan tipe data</li>
   <li>demo tipe data</li>
   <li>melengkapi section about dengan php serta menyesuaikan sesuai modul<li>
+  <li>latihan konstanta<li>
 </ol>  

@@ -33,16 +33,32 @@
         </section>
 
         <section id="about">
+            <?php
+            $NIM = "2511500083";
+            $nim = "2511500222";
+            $Nim = "";
+            $Nama_Lengkap = "Salsabilla Agustin";
+            $nama_lengkap = "salsabilla agustin";
+            $Tempat_Lahir = "Desa Air Limau";
+            $Tanggal_Lahir = "15 Agustus 2007";
+            $Hobi = "Membaca Novel dan Makeup";
+            $Pasangan = "Belum Ada &#9786; ";
+            $Pekerjaan = "Mahasiswa di ISB Atma Luhur &copy; 2025";
+            $Nama_OrangTua = "Bapak Sarpan dan Ibu Martini ";
+            $Nama_Kakak = "Febby Candella";
+            $Nama_Adik = "-";
+            ?>
             <h2>Tentang Saya</h2>
-            <p><strong>NIM:</strong>2511500083</p>
-            <p><strong>Nama Lengkap:</strong>Salsabilla Agustin</p>
-            <p><strong>Tempat Lahir:</strong>Desa Air Limau</p>
-            <p><strong>Tanggal Lahir</strong>15 Agustus 2007</p>
-            <p><strong>Hobi:</strong>Membaca Novel dan Makeup</p>
-            <p><strong>Pasangan:</strong>Belum Ada &#9786; </p>
-            <p><strong>Pekerjaan:</strong>Mahasiswa di ISB Atma Luhur &copy; 2025</p>
-            <p><strong>Nama OrangTua:</strong>Bapak Sarpan dan Ibu Martini </p>
-            <p><strong>Nama Kakak:</strong>Febby Candella</p>
+            <p><strong>NIM:</strong><?php echo $NIM ?></p>
+            <p><strong>Nama Lengkap:</strong><?php echo $Nama_Lengkap ?></p>
+            <p><strong>Tempat Lahir:</strong><?php echo $Tempat_Lahir ?></p>
+            <p><strong>Tanggal Lahir</strong><?php echo $Tanggal_Lahir ?></p>
+            <p><strong>Hobi:</strong><?php echo $Hobi ?></p>
+            <p><strong>Pasangan:</strong><?php echo $Pasangan ?></p>
+            <p><strong>Pekerjaan:</strong><?php echo $Pekerjaan ?></p>
+            <p><strong>Nama OrangTua:</strong><?php echo $Nama_OrangTua ?></p>
+            <p><strong>Nama Kakak:</strong><?php echo $Nama_Kakak ?></p>
+            <p><strong>Nama Adik:</strong><?php echo $Nama_Adik ?></p>
         </section>
         <section id="contact">
             <h2>Kontak Saya</h2>

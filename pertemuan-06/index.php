@@ -31,7 +31,7 @@
            echo "Nama Saya Salsabilla!";
             ?>
         </section>
-        
+
         <section id="about">
             <h2>Tentang Saya</h2>
             <p><strong>NIM:</strong>2511500083</p>
@@ -48,7 +48,7 @@
             <h2>Kontak Saya</h2>
             <form action="" method="GET">
               <label for="txtNama"><span>Nama:</span>
-                <input type="text" id="txtnama" name="txtNama" placeholder="Masukkan nama" >
+                <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" >
               </label>
               
               <label for="txtEmail"><span>Email:</span>

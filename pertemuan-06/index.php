@@ -93,38 +93,38 @@
               <?php
               $namaMatkul1 = "Aloritma dan Struktur Data";
               $namaMatkul2 = "Agama";
-              $namaMatkul3 = "-";
-              $namaMatkul4 = "-";
+              $namaMatkul3 = "KOnsep Basis Data";
+              $namaMatkul4 = "Wawasan Teknologi Informasi";
               $namaMatkul5 = "Pemrograman Web Dasar";
 
               $sksMatkul1 = "4";
               $sksMatkul2 = "2";
-              $sksMatkul3 = "0";
-              $sksMatkul4 = "0";
+              $sksMatkul3 = "3";
+              $sksMatkul4 = "4";
               $sksMatkul5 = "3";
 
               $nilaiHadir1 = "90";
               $nilaiHadir2 = "70";
-              $nilaiHadir3 = "0";
-              $nilaiHadir4 = "0";
+              $nilaiHadir3 = "80";
+              $nilaiHadir4 = "75";
               $nilaiHadir5 = "69";
 
               $nilaiTugas1 = "60";
               $nilaiTugas2 = "50";
-              $nilaiTugas3 = "0";
-              $nilaiTugas4 = "0";
+              $nilaiTugas3 = "55";
+              $nilaiTugas4 = "90";
               $nilaiTugas5 = "80";
 
               $nilaiUTS1 = "80";
               $nilaiUTS2 = "60";
-              $nilaiUTS3 = "0";
-              $nilaiUTS4 = "0";
+              $nilaiUTS3 = "85";
+              $nilaiUTS4 = "92";
               $nilaiUTS5 = "90";
 
               $nilaiUAS1 = "70";
               $nilaiUAS2 = "80";
-              $nilaiUAS3 = "0";
-              $nilaiUAS4 = "0";
+              $nilaiUAS3 = "86";
+              $nilaiUAS4 = "70";
               $nilaiUAS5 = "100";
 
               $nilaiAkhir1 = (0.1 * $nilaiHadir1) + (0.2 * $nilaiTugas1) + (0.3 * $nilaiUTS1) + (0.4 * $nilaiUAS1);
@@ -135,15 +135,15 @@
               
               $mutu1 = "3.00";
               $mutu2 = "2.70";
-              $mutu3 = "0.00";
-              $mutu4 = "0.00";
-              $mutu5 = "0.00";
+              $mutu3 = "3.30";
+              $mutu4 = "3.70";
+              $mutu5 = "3.70";
 
               $grade1 = "B";
               $grade2 = "B-";
-              $grade3 = "-";
-              $grade4 = "-";
-              $grade5 = "E";
+              $grade3 = "B+";
+              $grade4 = "A-";
+              $grade5 = "A-";
 
               $bobot1 = $mutu1 * $sksMatkul1;
               $bobot2 = $mutu2 * $sksMatkul2;
@@ -153,9 +153,9 @@
 
               $status1 = "Lulus";
               $status2 = "Lulus";
-              $status3 = "-";
-              $status4 = "-";
-              $status5 = "Tidak Lulus";
+              $status3 = "Lulus";
+              $status4 = "Lulus";
+              $status5 = "Lulus";
 
               $totalbobot = $bobot1 + $bobot2 + $bobot3 + $bobot4 + $bobot5;
               $totalsks = $sksMatkul1 + $sksMatkul2 + $sksMatkul3 + $sksMatkul4 + $sksMatkul5;
@@ -236,13 +236,6 @@
               <p><strong>Total Bobot:</strong><?php echo $totalbobot ?></p>
               <p><strong>Total SKS:</strong><?php echo $totalsks ?></p>
               <p><strong>IPK:</strong><?php echo $IPK ?></p>
-
-
-
-
-
-              
-
 
               
         </section>

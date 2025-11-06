@@ -237,7 +237,7 @@
               <p><strong>Total SKS:</strong><?php echo $totalsks ?></p>
               <p><strong>IPK:</strong><?php echo $IPK ?></p>
 
-              
+
         </section>
         
 
@@ -247,5 +247,5 @@
     </footer>
 
     <script src="script.js"></script>
-</body>
+</body> 
 </html>

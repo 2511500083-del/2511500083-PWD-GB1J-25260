@@ -17,4 +17,5 @@ Hari ini, Kamis 23 Oktober 2025, saya belajar:
   <li>latihan membuat operator pembanding di file php</li>
   <li>membuat struktur kontrol percabangan</li>
   <li>membuat struktur kontrol pengulangnan & array</li>
+  <li>Latihan array dan penggunaan print_r() dan var_dump()</li>
 </ol>  

@@ -84,47 +84,42 @@
             <div id="result"></div>
         </section>
         <?php
-        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+          $namaMatkul1 = $_POST['namaMatkul1'] ?? "";
+          $sksMatkul1 = $_POST['sksMatkul1'] ?? 0;
+          $nilaiHadir1 = $_POST['nilaiHadir1'] ?? 0;
+          $nilaiTugas1 = $_POST['nilaiTugas1'] ?? 0;
+          $nilaiUTS1 = $_POST['nilaiUTS1'] ?? 0;
+          $nilaiUAS1 = $_POST['nilaiUAS1'] ?? 0;
 
-          $namaMatkul1 = $_POST['namaMatkul1'];
-          $namaMatkul2 = $_POST['namaMatkul2'];
-          $namaMatkul3 = $_POST['namaMatkul3'];
-          $namaMatkul4 = $_POST['namaMatkul4'];
-          $namaMatkul5 = $_POST['namaMatkul5'];
+          $namaMatkul2 = $_POST['namaMatkul2'] ?? "";
+          $sksMatkul2 = $_POST['sksMatkul2'] ?? 0;
+          $nilaiHadir2 = $_POST['nilaiHadir2'] ?? 0;
+          $nilaiTugas2 = $_POST['nilaiTugas2'] ?? 0;
+          $nilaiUTS2 = $_POST['nilaiUTS2'] ?? 0;
+          $nilaiUAS2 = $_POST['nilaiUAS2'] ?? 0;
 
-          $sksMatkul1 = $_POST['sksMatkul1'];
-          $sksMatkul2 = $_POST['sksMatkul2'];
-          $sksMatkul3 = $_POST['sksMatkul3'];
-          $sksMatkul4 = $_POST['sksMatkul4'];
-          $sksMatkul5 = $_POST['sksMatkul5'];
+          $namaMatkul3 = $_POST['namaMatkul3'] ?? "";
+          $sksMatkul3 = $_POST['sksMatkul3'] ?? 0;
+          $nilaiHadir3 = $_POST['nilaiHadir3'] ?? 0;
+          $nilaiTugas3 = $_POST['nilaiTugas3'] ?? 0;
+          $nilaiUTS3 = $_POST['nilaiUTS3'] ?? 0;
+          $nilaiUAS3 = $_POST['nilaiUAS3'] ?? 0;
 
-          $nilaiHadir1 = $_POST['nilaiHadir1'];
-          $nilaiHadir2 = $_POST['nilaiHadir2'];
-          $nilaiHadir3 = $_POST['nilaiHadir3'];
-          $nilaiHadir4 = $_POST['nilaiHadir4'];
-          $nilaiHadir5 = $_POST['nilaiHadir5'];
+          $namaMatkul4 = $_POST['namaMatkul4'] ?? "";
+          $sksMatkul4 = $_POST['sksMatkul4'] ?? 0;
+          $nilaiHadir4 = $_POST['nilaiHadir4'] ?? 0;
+          $nilaiTugas4 = $_POST['nilaiTugas4'] ?? 0;
+          $nilaiUTS4 = $_POST['nilaiUTS4'] ?? 0;
+          $nilaiUAS4 = $_POST['nilaiUAS4'] ?? 0;
 
-          $nilaiTugas1 = $_POST['nilaiTugas1'];
-          $nilaiTugas2 = $_POST['nilaiTugas2'];
-          $nilaiTugas3 = $_POST['nilaiTugas3'];
-          $nilaiTugas4 = $_POST['nilaiTugas4'];
-          $nilaiTugas5 = $_POST['nilaiTugas5'];
-
-          $nilaiUTS1 = $_POST['nilaiUTS1'];
-          $nilaiUTS2 = $_POST['nilaiUTS2'];
-          $nilaiUTS3 = $_POST['nilaiUTS3'];
-          $nilaiUTS4 = $_POST['nilaiUTS4'];
-          $nilaiUTS5 = $_POST['nilaiUTS5'];
-
-          $nilaiUAS1 = $_POST['nilaiUAS1'];
-          $nilaiUAS2 = $_POST['nilaiUAS2'];
-          $nilaiUAS3 = $_POST['nilaiUAS3'];
-          $nilaiUAS4 = $_POST['nilaiUAS4'];
-          $nilaiUAS5 = $_POST['nilaiUAS5'];
-
-        }
+          $namaMatkul5 = $_POST['namaMatkul5'] ?? "";
+          $sksMatkul5 = $_POST['sksMatkul5'] ?? 0;
+          $nilaiHadir5 = $_POST['nilaiHadir5'] ?? 0;
+          $nilaiTugas5 = $_POST['nilaiTugas5'] ?? 0;
+          $nilaiUTS5 = $_POST['nilaiUTS5'] ?? 0;
+          $nilaiUAS5 = $_POST['nilaiUAS5'] ?? 0;
         ?>
-        
+
         <section id="ipk">
            <h2>Nilai Saya</h2>
               <?php

@@ -118,6 +118,14 @@
           $nilaiTugas5 = $_POST['nilaiTugas5'] ?? 0;
           $nilaiUTS5 = $_POST['nilaiUTS5'] ?? 0;
           $nilaiUAS5 = $_POST['nilaiUAS5'] ?? 0;
+
+          $totalSKS = $sksMatkul1 + $sksMatkul2 + $sksMatkul3 + $sksMatkul4 + $sksMatkul5;
+          $totalBobot = $bobot1 + $bobot2 + $bobot3 + $bobot4 + $bobot5;
+          if ($totalSKS > 0) {
+            $IPK = $totalBobot / $totalSKS;
+          } else {
+            $IPK = 0;
+          }
         ?>
 
         <section id="ipk">

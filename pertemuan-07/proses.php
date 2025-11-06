@@ -1,3 +1,3 @@
 <?php
-    echo "haii"
+    echo $_POST["txtNama"];
 ?>

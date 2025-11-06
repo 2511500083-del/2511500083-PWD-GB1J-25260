@@ -135,8 +135,9 @@
               $mutu3 = "0.00";
               $mutu4 = "0.00";
               $mutu5 = "0.00";
+
               $grade1 = "B";
-              $grade2 = "-B";
+              $grade2 = "B-";
               $grade3 = "-";
               $grade4 = "-";
               $grade5 = "E";

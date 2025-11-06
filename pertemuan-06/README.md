@@ -19,4 +19,5 @@ Hari ini, Kamis 23 Oktober 2025, saya belajar:
   <li>membuat struktur kontrol pengulangnan & array</li>
   <li>Latihan array dan penggunaan print_r() dan var_dump()</li>
   <li>Latihan struktur kontrol perulangan dengan for:</li>
+  <li>membuat infinite loop</li>
 </ol>  

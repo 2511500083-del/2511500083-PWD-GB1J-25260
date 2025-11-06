@@ -48,6 +48,7 @@
             $Nama_Kakak = "Febby Candella";
             $Nama_Adik = "-";
             ?>
+
             <h2>Tentang Saya</h2>
             <p><strong>NIM:</strong><?php echo $NIM ?></p>
             <p><strong>Nama Lengkap:</strong><?php echo $Nama_Lengkap ?></p>
@@ -60,6 +61,7 @@
             <p><strong>Nama Kakak:</strong><?php echo $Nama_Kakak ?></p>
             <p><strong>Nama Adik:</strong><?php echo $Nama_Adik ?></p>
         </section>
+        
         <section id="contact">
             <h2>Kontak Saya</h2>
             <form action="" method="GET">

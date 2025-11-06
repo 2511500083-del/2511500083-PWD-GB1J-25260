@@ -79,6 +79,7 @@
               
               <button type="submit">Kirim</button>
               <button type="reset">Batal</button>
+              <input type="submit" name="proses" value="Hitung">
             </form>
             <div id="result"></div>
         </section>

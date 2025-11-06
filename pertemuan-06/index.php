@@ -79,7 +79,7 @@
               
               <button type="submit">Kirim</button>
               <button type="reset">Batal</button>
-              <input type="submit" name="proses" value="Hitung">
+
             </form>
             <div id="result"></div>
         </section>
@@ -124,9 +124,9 @@
 
         }
         ?>
-        <?php if(isset($_POST['proses'])): ?>
+        
         <section id="ipk">
-           <h2>Hasil Perhitungan IPK</h2>
+           <h2>Nilai Saya</h2>
               <?php
               function getGrade($nilaiAkhir, $nilaiHadir) {
                 if ($nilaiHadir < 70) return "E";
@@ -213,7 +213,7 @@
               </tr>
             </table>
         </section>
-        <?php endif; ?>
+        
 
     </main>
     <footer>

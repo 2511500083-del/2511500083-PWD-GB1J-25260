@@ -15,4 +15,5 @@ Hari ini, Kamis 23 Oktober 2025, saya belajar:
   <li>latihan membuat komentar pada php</li>
   <li>latihan operator dasar</li>
   <li>latihan membuat operator pembanding di file php</li>
+  <li>membuat struktur kontrol percabangan</li>
 </ol>  

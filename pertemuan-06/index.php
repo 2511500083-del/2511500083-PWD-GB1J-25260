@@ -64,7 +64,8 @@
         
         <section id="contact">
             <h2>Kontak Saya</h2>
-            <form action="" method="GET">
+            <form action="proses.php" method="POST">
+
               <label for="txtNama"><span>Nama:</span>
                 <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" >
               </label>

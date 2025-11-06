@@ -128,7 +128,7 @@
            <h2>Hasil Perhitungan IPK</h2>
               <?php
               function getGrade($nilaiAkhir, $nilaiHadir) {
-               if ($nilaiHadir < 70) return "E";
+                if ($nilaiHadir < 70) return "E";
 
                 if ($nilaiAkhir >= 91) return "A";
                 else if ($nilaiAkhir >= 81) return "A-";
@@ -154,12 +154,12 @@
                   case "C-": return 1.70;
                   case "D": return 1.00;
                   default: return 0.00;
-               }
+                }
               }
 
               function getStatus($grade) {
                 return ($grade == "D" || $grade == "E") ? "GAGAL" : "LULUS";
-             }
+              }
 
               for ($i = 1; $i <= 5; $i++) {
                 ${"nilaiAkhir$i"} = (0.1 * ${"nilaiHadir$i"}) + (0.2 * ${"nilaiTugas$i"}) + (0.3 * ${"nilaiUTS$i"}) + (0.4 * ${"nilaiUAS$i"});
@@ -174,7 +174,7 @@
               $IPK = $totalBobot / $totalSKS;
               ?>
 
-             <table border="1" cellpadding="8" cellspacing="0">
+            <table border="1" cellpadding="8" cellspacing="0">
               <tr>
                 <th align="right">Mata Kuliah</th>
                 <th align="left">SKS - Nilai Akhir | Grade | Mutu | Bobot | Status</th>

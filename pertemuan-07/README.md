@@ -10,4 +10,5 @@ Hari ini, Kamis 06 November 2025, saya belajar:
     <li>mengedit form action di index.php</li>
     <li>buat file proses.php</li>
     <li>ambil nilai input proses.php</li>
+    <li>menyimpan nilai dari input ke variabel</li>
 </ol>

@@ -212,6 +212,7 @@
               </tr>
             </table>
         </section>
+        <?php endif; ?>
 
     </main>
     <footer>

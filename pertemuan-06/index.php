@@ -82,6 +82,95 @@
             </form>
             <div id="result"></div>
         </section>
+        <section id="ipk">
+           <h2>Hasil Perhitungan IPK</h2>
+              <?php
+              function getGrade($nilaiAkhir, $nilaiHadir) {
+               if ($nilaiHadir < 70) return "E";
+
+                if ($nilaiAkhir >= 91) return "A";
+                else if ($nilaiAkhir >= 81) return "A-";
+                else if ($nilaiAkhir >= 76) return "B+";
+                else if ($nilaiAkhir >= 71) return "B";
+                else if ($nilaiAkhir >= 66) return "B-";
+                else if ($nilaiAkhir >= 61) return "C+";
+                else if ($nilaiAkhir >= 56) return "C";
+                else if ($nilaiAkhir >= 51) return "C-";
+                else if ($nilaiAkhir >= 36) return "D";
+                else return "E";
+              }
+
+              function getMutu($grade) {
+                switch($grade) {
+                  case "A": return 4.00;
+                  case "A-": return 3.70;
+                  case "B+": return 3.30;
+                  case "B": return 3.00;
+                  case "B-": return 2.70;
+                  case "C+": return 2.30;
+                  case "C": return 2.00;
+                  case "C-": return 1.70;
+                  case "D": return 1.00;
+                  default: return 0.00;
+               }
+              }
+
+              function getStatus($grade) {
+                return ($grade == "D" || $grade == "E") ? "GAGAL" : "LULUS";
+             }
+
+              for ($i = 1; $i <= 5; $i++) {
+                ${"nilaiAkhir$i"} = (0.1 * ${"nilaiHadir$i"}) + (0.2 * ${"nilaiTugas$i"}) + (0.3 * ${"nilaiUTS$i"}) + (0.4 * ${"nilaiUAS$i"});
+                ${"grade$i"} = getGrade(${"nilaiAkhir$i"}, ${"nilaiHadir$i"});
+                ${"mutu$i"} = getMutu(${"grade$i"});
+                ${"bobot$i"} = ${"mutu$i"} * ${"sksMatkul$i"};
+                ${"status$i"} = getStatus(${"grade$i"});
+              }
+
+              $totalBobot = $bobot1 + $bobot2 + $bobot3 + $bobot4 + $bobot5;
+              $totalSKS = $sksMatkul1 + $sksMatkul2 + $sksMatkul3 + $sksMatkul4 + $sksMatkul5;
+              $IPK = $totalBobot / $totalSKS;
+              ?>
+
+             <table border="1" cellpadding="8" cellspacing="0">
+              <tr>
+                <th align="right">Mata Kuliah</th>
+                <th align="left">SKS - Nilai Akhir | Grade | Mutu | Bobot | Status</th>
+              </tr>
+
+              <?php for ($i = 1; $i <= 5; $i++): ?>
+              <tr>
+                <td align="right"><?= ${"namaMatkul$i"} ?></td>
+                <td align="left">
+                  <?= ${"sksMatkul$i"} ?> SKS |
+                  <?= round(${"nilaiAkhir$i"}, 2) ?> |
+                  <?= ${"grade$i"} ?> |
+                  <?= number_format(${"mutu$i"}, 2) ?> |
+                  <?= number_format(${"bobot$i"}, 2) ?> |
+                  <?= ${"status$i"} ?>
+                </td>
+              </tr>
+              <?php endfor; ?>
+            </table>
+
+            <br>
+
+            <table>
+              <tr>
+                <td align="right"><b>Total SKS</b></td>
+                <td align="left">: <?= $totalSKS ?></td>
+              </tr>
+              <tr>
+                <td align="right"><b>Total Bobot</b></td>
+                <td align="left">: <?= number_format($totalBobot, 2) ?></td>
+              </tr>
+              <tr>
+                <td align="right"><b>IPK</b></td>
+                <td align="left">: <?= number_format($IPK, 2) ?></td>
+              </tr>
+            </table>
+        </section>
+
     </main>
     <footer>
         <p>&copy; &#9786; 2025 Salsabilla Agustin 2511500083</p>

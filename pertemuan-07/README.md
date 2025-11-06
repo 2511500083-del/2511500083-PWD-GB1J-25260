@@ -8,3 +8,5 @@ Hari ini, Kamis 06 November 2025, saya belajar:
 <ol>
     <li>download dan extract folder tertemuan-07 zip </li>
     <li>mengedit form action di index.php</li>
+    <li>buat file proses.php</li>
+</ol>

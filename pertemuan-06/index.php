@@ -82,6 +82,48 @@
             </form>
             <div id="result"></div>
         </section>
+        <?php
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+          $namaMatkul1 = $_POST['namaMatkul1'];
+          $namaMatkul2 = $_POST['namaMatkul2'];
+          $namaMatkul3 = $_POST['namaMatkul3'];
+          $namaMatkul4 = $_POST['namaMatkul4'];
+          $namaMatkul5 = $_POST['namaMatkul5'];
+
+          $sksMatkul1 = $_POST['sksMatkul1'];
+          $sksMatkul2 = $_POST['sksMatkul2'];
+          $sksMatkul3 = $_POST['sksMatkul3'];
+          $sksMatkul4 = $_POST['sksMatkul4'];
+          $sksMatkul5 = $_POST['sksMatkul5'];
+
+          $nilaiHadir1 = $_POST['nilaiHadir1'];
+          $nilaiHadir2 = $_POST['nilaiHadir2'];
+          $nilaiHadir3 = $_POST['nilaiHadir3'];
+          $nilaiHadir4 = $_POST['nilaiHadir4'];
+          $nilaiHadir5 = $_POST['nilaiHadir5'];
+
+          $nilaiTugas1 = $_POST['nilaiTugas1'];
+          $nilaiTugas2 = $_POST['nilaiTugas2'];
+          $nilaiTugas3 = $_POST['nilaiTugas3'];
+          $nilaiTugas4 = $_POST['nilaiTugas4'];
+          $nilaiTugas5 = $_POST['nilaiTugas5'];
+
+          $nilaiUTS1 = $_POST['nilaiUTS1'];
+          $nilaiUTS2 = $_POST['nilaiUTS2'];
+          $nilaiUTS3 = $_POST['nilaiUTS3'];
+          $nilaiUTS4 = $_POST['nilaiUTS4'];
+          $nilaiUTS5 = $_POST['nilaiUTS5'];
+
+          $nilaiUAS1 = $_POST['nilaiUAS1'];
+          $nilaiUAS2 = $_POST['nilaiUAS2'];
+          $nilaiUAS3 = $_POST['nilaiUAS3'];
+          $nilaiUAS4 = $_POST['nilaiUAS4'];
+          $nilaiUAS5 = $_POST['nilaiUAS5'];
+
+        }
+        ?>
+        <?php if ($_SERVER['REQUEST_METHOD'] == 'POST'): ?>
         <section id="ipk">
            <h2>Hasil Perhitungan IPK</h2>
               <?php

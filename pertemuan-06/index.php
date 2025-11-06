@@ -123,7 +123,7 @@
 
         }
         ?>
-        <?php if ($_SERVER['REQUEST_METHOD'] == 'POST'): ?>
+        <?php if(isset($_POST['proses'])): ?>
         <section id="ipk">
            <h2>Hasil Perhitungan IPK</h2>
               <?php

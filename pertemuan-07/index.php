@@ -1,11 +1,11 @@
 <?php
     session_start();
-    $sesnama = $_SESSION["sesnama"]; 
+    $sesnama = $_SESSION["sesnama"];
     $sesemail = $_SESSION["sesemail"];
     $sespesan = $_SESSION["sespesan"];
-  echo $sesnama . $sesemail . $sespesan;
+    
 ?>
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -35,17 +35,33 @@
       <h2>Selamat Datang</h2>
       <?php
       echo "halo dunia!<br>";
-      echo "nama saya hadi";
+      echo "nama saya Salsabilla";
       ?>
       <p>Ini contoh paragraf HTML.</p>
     </section>
 
     <section id="about">
       <?php
-      $nim = 2511500010;
-      $NIM = '0344300002';
-      $nama = "Say'yid Abdullah";
-      $Nama = 'Al\'kautar Benyamin';
+      $nim = '0344300002';
+      $NIM = 2511500010 ;
+      $nama_lngkap = "Bilaaaaaaaaaaaaaaaa";
+      $Nama_Lengkap = 'Salsabilla Agustin';
+      $tmpt_lahir = "Muntok";
+      $Tempat_Lahir = 'Desa Air Limau';
+      $Tgl_Lahir = "15 Agustus 2007";
+      $tanggal_lahir = '15/08/2007';
+      $hobi = "Make up & Membaca";
+      $Hobi = 'Membaca Novel dan Makeup an';
+      $pasangan = "Mingyuuuuuuuuuuu";
+      $Pasangan = 'Belum adaa';
+      $pekerjaan = "nganggur";
+      $Pekerjaan = 'Mahasiswa ISB Atma Luhur 2025';
+      $nama_orangtua = "Mama & Papa";
+      $Nama_Orangtua = 'Bapak Sarpan dan Ibu Martini';
+      $nama_kakak = "ada dehh";
+      $Nama_Kakak = 'Febby Candella';
+      $nama_adik = "saya adalah anak bungsuuu jadi tdk punya adikk";
+      $Nama_Adik = '-';
       ?>
       <h2>Tentang Saya</h2>
       <p><strong>NIM:</strong>
@@ -55,10 +71,14 @@
       </p>
       <p><strong>Nama Lengkap:</strong>
         <?php
-        echo $Nama;
-        ?> &#128526;
+        echo $Nama_Lengkap;
+        ?> 
       </p>
-      <p><strong>Tempat Lahir:</strong> Pangkalpinang</p>
+      <p><strong>Tempat Lahir:</strong>
+        <?php
+        echo $Tempat_Lahir;
+        ?>
+      </p>
       <p><strong>Tanggal Lahir:</strong> 1 Januari 2000</p>
       <p><strong>Hobi:</strong> Memasak, coding, dan bermain musik &#127926;</p>
       <p><strong>Pasangan:</strong> Belum ada &hearts;</p>
@@ -89,6 +109,16 @@
         <button type="submit">Kirim</button>
         <button type="reset">Batal</button>
       </form>
+      <h2>Yang menghubungi kami</h2>
+      <p>
+        Nama : <strong><?php echo $sesnama ?></strong>
+      </p>
+      <p>
+        Email : <strong><?php echo $sesemail ?></strong>
+      </p>
+      <p>
+        Pesan : <strong><?php echo $sespesan ?></strong>
+      </p>
     </section>
   </main>
 

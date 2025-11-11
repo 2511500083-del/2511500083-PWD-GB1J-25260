@@ -3,7 +3,7 @@
     $sesnama = $_SESSION["sesnama"];
     $sesemail = $_SESSION["sesemail"];
     $sespesan = $_SESSION["sespesan"];
-    
+    echo $sesnama . $sesemail . $sespesan;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -43,7 +43,7 @@
     <section id="about">
       <?php
       $nim = '0344300002';
-      $NIM = 2511500010 ;
+      $NIM = 2511500083 ;
       $nama_lngkap = "Bilaaaaaaaaaaaaaaaa";
       $Nama_Lengkap = 'Salsabilla Agustin';
       $tmpt_lahir = "Muntok";
@@ -79,13 +79,41 @@
         echo $Tempat_Lahir;
         ?>
       </p>
-      <p><strong>Tanggal Lahir:</strong> 1 Januari 2000</p>
-      <p><strong>Hobi:</strong> Memasak, coding, dan bermain musik &#127926;</p>
-      <p><strong>Pasangan:</strong> Belum ada &hearts;</p>
-      <p><strong>Pekerjaan:</strong> Dosen di ISB Atma Luhur &copy; 2025</p>
-      <p><strong>Nama Orang Tua:</strong> Bapak Setiawan dan Ibu Maria</p>
-      <p><strong>Nama Kakak:</strong> Antonius Setiawan</p>
-      <p><strong>Nama Adik:</strong> Christina Setiawan</p>
+      <p><strong>Tanggal Lahir:</strong>
+        <?php 
+        echo $Tgl_Lahir;
+        ?>
+      </p>
+      <p><strong>Hobi:</strong> 
+        <?php
+        echo $Hobi;
+        ?>
+      </p>
+      <p><strong>Pasangan:</strong> 
+        <?php
+        echo $Pasangan;
+        ?>
+      </p>
+      <p><strong>Pekerjaan:</strong> 
+        <?php
+        echo $Pekerjaan; 
+        ?>
+      </p>
+      <p><strong>Nama Orang Tua:</strong> 
+        <?php
+        echo $Nama_Orangtua;
+        ?>
+      </p>
+      <p><strong>Nama Kakak:</strong> 
+        <?php
+        echo $Nama_Kakak;
+        ?> 
+      </p>
+      <p><strong>Nama Adik:</strong> 
+        <?php
+        echo $Nama_Adik;
+        ?>
+      </p>
     </section>
 
     <section id="contact">
@@ -123,7 +151,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Yohanes Setiawan Japriadi [0344300002]</p>
+    <p>&copy; 2025 Salsabilla Agustin [2511500083]</p>
   </footer>
 
   <script src="script.js"></script>

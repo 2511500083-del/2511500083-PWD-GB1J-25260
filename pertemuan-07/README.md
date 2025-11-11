@@ -13,4 +13,5 @@ Hari ini, Kamis 06 November 2025, saya belajar:
     <li>menyimpan nilai dari input ke variabel</li>
     <li>session proses.php dan index.php</li>
     <li>redirect ke index.php</li>
+    <li>mengedit index.php di bagian about dan footer</li>
 </ol>

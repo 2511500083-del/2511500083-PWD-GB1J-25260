@@ -14,4 +14,5 @@ Hari ini, Kamis 06 November 2025, saya belajar:
     <li>session proses.php dan index.php</li>
     <li>redirect ke index.php</li>
     <li>mengedit index.php di bagian about dan footer</li>
+    <li>copy paste index.php dan proses.php menjadi get.php dan get_proses.php</li>
 </ol>

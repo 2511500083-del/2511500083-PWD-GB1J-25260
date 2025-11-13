@@ -3,6 +3,8 @@ session_start();
 $sesnama = $_SESSION["sesnama"]?? "";
 $sesemail = $_SESSION["sesemail"]?? "";
 $sespesan = $_SESSION["sespesan"];
+?>
+<?php
 $sesnim = $_SESSION["sesnim"];
 $sesnama_lengkap = $_SESSION["sesemail"];
 $sestempat = $_SESSION["sestempat"];

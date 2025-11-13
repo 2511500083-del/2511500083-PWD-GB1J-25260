@@ -77,37 +77,24 @@ endif;
         </label>
 
         <label for="txtPasangan"><span>Pasangan:</span>
-          <input type="text" id="txtPasangan" name="txtPasangan" placeholder="Masukkan nama pasangan anda (jika ada)" required autocomplete="tempat">  
+          <input type="text" id="txtPasangan" name="txtPasangan" placeholder="Masukkan nama pasangan anda (jika ada)" required autocomplete="pasangan">  
         </label>
 
-        <label for="txtTempat"><span>Tempat Lahir:</span>
-          <input type="text" id="txtTempat" name="txtTempat" placeholder="Masukkan tempat kelahiran anda" required autocomplete="tempat">  
+        <label for="txtPekerjaan"><span>Pekerjaan:</span>
+          <input type="text" id="txtPekerjaan" name="txtPekerjaan" placeholder="Masukkan pekerjaan anda sekarang" required autocomplete="pekerjaan">  
         </label>
 
-        <label for="txtTempat"><span>Tempat Lahir:</span>
-          <input type="text" id="txtTempat" name="txtTempat" placeholder="Masukkan tempat kelahiran anda" required autocomplete="tempat">  
+        <label for="txtNama_Orangtua"><span>Nama Orangtua:</span>
+          <input type="text" id="txtNama_Orangtua" name="txtNama_Orangtua" placeholder="Masukkan Nama kedua Orangtua anda" required autocomplete="nama_orangtua">  
         </label>
 
-        <label for="txtTempat"><span>Tempat Lahir:</span>
-          <input type="text" id="txtTempat" name="txtTempat" placeholder="Masukkan tempat kelahiran anda" required autocomplete="tempat">  
+        <label for="txtNama_Kakak"><span>Nama Kakak:</span>
+          <input type="text" id="txtNama_Kakak" name="txtNama_Kakak" placeholder="Masukkan nama kakak anda" required autocomplete="nama_kakak">  
         </label>
 
-        <label for="txtTempat"><span>Tempat Lahir:</span>
-          <input type="text" id="txtTempat" name="txtTempat" placeholder="Masukkan tempat kelahiran anda" required autocomplete="tempat">  
+        <label for="txtNama_Adik"><span>Nama txtNama_Adik:</span>
+          <input type="text" id="txtNama_Adik" name="txtNama_Adik" placeholder="Masukkan nama adik anda" required autocomplete="nama_adik">  
         </label>
-
-        <label for="txtTempat"><span>Tempat Lahir:</span>
-          <input type="text" id="txtTempat" name="txtTempat" placeholder="Masukkan tempat kelahiran anda" required autocomplete="tempat">  
-        </label>
-
-
-
-
-
-
-
-
-
 
         <button type="submit">Kirim</button>
         <button type="reset">Batal</button>

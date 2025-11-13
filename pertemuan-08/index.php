@@ -54,6 +54,64 @@ endif;
 
     <section id="biodata">
       <h2>Biodata Sederhana Mahasiswa</h2>
+      <form action="proses.php" method="POST">
+
+        <label for="txtNim"><span>NIM:</span>
+          <input type="text" id="txtNim" name="txtNim" placeholder="Masukkan nim anda" required autocomplete="nim">
+        </label>
+
+        <label for="txtNama"><span>Nama Lengkap:</span>
+          <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama lengkap" required autocomplete="name">
+        </label>
+
+        <label for="txtTempat"><span>Tempat Lahir:</span>
+          <input type="text" id="txtTempat" name="txtTempat" placeholder="Masukkan tempat kelahiran anda" required autocomplete="tempat">  
+        </label>
+
+        <label for="txtTanggal"><span>Tanggal Lahir:</span>
+          <input type="text" id="txtTanggal" name="txtTanggal" placeholder="Masukkan tanggal kelahiran anda" required autocomplete="tanggal">  
+        </label>
+
+        <label for="txtHobi"><span>Hobi:</span>
+          <input type="text" id="txtHobi" name="txtHobi" placeholder="Masukkan hobi yang anda gemari" required autocomplete="hobi">  
+        </label>
+
+        <label for="txtPasangan"><span>Pasangan:</span>
+          <input type="text" id="txtPasangan" name="txtPasangan" placeholder="Masukkan nama pasangan anda (jika ada)" required autocomplete="tempat">  
+        </label>
+
+        <label for="txtTempat"><span>Tempat Lahir:</span>
+          <input type="text" id="txtTempat" name="txtTempat" placeholder="Masukkan tempat kelahiran anda" required autocomplete="tempat">  
+        </label>
+
+        <label for="txtTempat"><span>Tempat Lahir:</span>
+          <input type="text" id="txtTempat" name="txtTempat" placeholder="Masukkan tempat kelahiran anda" required autocomplete="tempat">  
+        </label>
+
+        <label for="txtTempat"><span>Tempat Lahir:</span>
+          <input type="text" id="txtTempat" name="txtTempat" placeholder="Masukkan tempat kelahiran anda" required autocomplete="tempat">  
+        </label>
+
+        <label for="txtTempat"><span>Tempat Lahir:</span>
+          <input type="text" id="txtTempat" name="txtTempat" placeholder="Masukkan tempat kelahiran anda" required autocomplete="tempat">  
+        </label>
+
+        <label for="txtTempat"><span>Tempat Lahir:</span>
+          <input type="text" id="txtTempat" name="txtTempat" placeholder="Masukkan tempat kelahiran anda" required autocomplete="tempat">  
+        </label>
+
+
+
+
+
+
+
+
+
+
+        <button type="submit">Kirim</button>
+        <button type="reset">Batal</button>
+      </form>
     </section>
 
     <section id="about">

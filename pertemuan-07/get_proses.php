@@ -1,5 +1,5 @@
 <?php
-session_start();
+#session_start();
 $sesnama = $_GET["txtNama"];
 $sesemail = $_GET["txtEmail"];
 $sespesan = $_GET["txtPesan"];

@@ -93,7 +93,7 @@
               <?php
               $namaMatkul1 = "Aloritma dan Struktur Data";
               $namaMatkul2 = "Agama";
-              $namaMatkul3 = "KOnsep Basis Data";
+              $namaMatkul3 = "Konsep Basis Data";
               $namaMatkul4 = "Wawasan Teknologi Informasi";
               $namaMatkul5 = "Pemrograman Web Dasar";
 

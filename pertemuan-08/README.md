@@ -14,4 +14,5 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
   <li>mengcopy paste skrip section #contact untuk skrip section #biodata</li>
   <li>mengedit skrip section #biodata</li>
   <li>men styling section #biodata mengikuti section #contact</li>
+  <li>mengedit skrip index.php yang sedikit keliru</li>
 </ol>

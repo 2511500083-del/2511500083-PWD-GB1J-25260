@@ -92,7 +92,7 @@ endif;
           <input type="text" id="txtNama_Kakak" name="txtNama_Kakak" placeholder="Masukkan nama kakak anda" required autocomplete="nama_kakak">  
         </label>
 
-        <label for="txtNama_Adik"><span>Nama txtNama_Adik:</span>
+        <label for="txtNama_Adik"><span>Nama_Adik:</span>
           <input type="text" id="txtNama_Adik" name="txtNama_Adik" placeholder="Masukkan nama adik anda" required autocomplete="nama_adik">  
         </label>
 

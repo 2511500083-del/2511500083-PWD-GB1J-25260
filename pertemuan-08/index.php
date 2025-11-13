@@ -168,7 +168,7 @@ endif;
       <p><strong>Nama Lengkap:</strong>
         <?php
         echo $sesnama_lengkap ;
-        ?> &#128526;
+        ?> 
       </p>
       <p><strong>Tempat Lahir:</strong> <?php echo $sestempat; ?></p>
       <p><strong>Tanggal Lahir:</strong> <?php echo $sestanggal; ?> </p>

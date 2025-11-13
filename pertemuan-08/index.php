@@ -116,7 +116,7 @@ $sesnama_adik = $_POST["txtNama_Adik"];
       </p>
       <p><strong>Nama Lengkap:</strong>
         <?php
-        echo $sesnama_lengkap ;
+        echo $sesnama_lengkap;
         ?> 
       </p>
       <p><strong>Tempat Lahir:</strong> <?php echo $sestempat; ?></p>
@@ -126,7 +126,7 @@ $sesnama_adik = $_POST["txtNama_Adik"];
       <p><strong>Pekerjaan:</strong> <?php echo $sespekerjaan; ?></p>
       <p><strong>Nama Orang Tua:</strong> <?php echo $sesnama_orangtua; ?></p>
       <p><strong>Nama Kakak:</strong><?php echo $sesnama_kakak; ?></p>
-      <p><strong>Nama Adik:</strong> <?php echo $sesnama_adik ?></p>
+      <p><strong>Nama Adik:</strong> <?php echo $sesnama_adik; ?></p>
     </section>
 
     <section id="contact">

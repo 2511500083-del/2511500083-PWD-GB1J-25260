@@ -13,4 +13,5 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
   <li>membuat section biodata dan menambahkan h2 didalamnya</li>
   <li>mengcopy paste skrip section #contact untuk skrip section #biodata</li>
   <li>mengedit skrip section #biodata</li>
+  <li>men styling section #biodata mengikuti section #contact</li>
 </ol>

@@ -1,7 +1,7 @@
 <?php
 session_start();
-$sesnama = $_SESSION["sesnama"];
-$sesemail = $_SESSION["sesemail"];
+$sesnama = $_SESSION["sesnama"]?? "";
+$sesemail = $_SESSION["sesemail"]?? "";
 $sespesan = $_SESSION["sespesan"];
 $sesnim = $_SESSION["sesnim"];
 $sesnama_lengkap = $_SESSION["sesemail"];

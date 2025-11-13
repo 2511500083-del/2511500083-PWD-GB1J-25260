@@ -9,5 +9,5 @@ Kelompok: GB1J<br>
 Proses saya mengerjakan UTS ini sebagai berikut:<br>
 <ol>
   <li>mendownload bahan UTS dan mengcopy paste ke pertemuan-08</li>
-  <li></li>
+  <li>meng extract bahan UTS dan menghapus file index.html di pertemuan-08</li>
 </ol>

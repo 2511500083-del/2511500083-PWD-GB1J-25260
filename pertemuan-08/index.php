@@ -52,6 +52,10 @@ endif;
       <p>Ini contoh paragraf HTML.</p>
     </section>
 
+    <section id="biodata">
+      <h2>Biodata Sederhana Mahasiswa</h2>
+    </section>
+
     <section id="about">
       <?php
       $nim = 2511500010;

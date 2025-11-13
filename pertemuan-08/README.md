@@ -10,4 +10,5 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
 <ol>
   <li>mendownload bahan UTS dan mengcopy paste ke pertemuan-08</li>
   <li>meng extract bahan UTS dan menghapus file index.html di pertemuan-08</li>
+  <li>membuat section biodata dan menambahkan h2 didalamnya yaitu </li>
 </ol>

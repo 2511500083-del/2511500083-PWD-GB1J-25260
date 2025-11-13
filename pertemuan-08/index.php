@@ -1,70 +1,19 @@
 <?php
 session_start();
+$sesnama = $_SESSION["sesnama"];
+$sesemail = $_SESSION["sesemail"];
+$sespesan = $_SESSION["sespesan"];
+$sesnim = $_SESSION["sesnim"];
+$sesnama_lengkap = $_SESSION["sesemail"];
+$sestempat = $_SESSION["sestempat"];
+$sestanggal = $_SESSION["sestanggal"];
+$seshobi = $_SESSION["seshobi"];
+$sespasangan = $_SESSION["sespasangan"];
+$sespekerjaan = $_SESSION["sespekerjaan"];
+$sesnama_orangtua = $_SESSION["sesnama_orangtua"];
+$sesnama_kakak = $_POST["txtNama_Kakak"];
+$sesnama_adik = $_POST["txtNama_Adik"];
 
-$sesnama = "";
-if (isset($_SESSION["sesnama"])):
-  $sesnama = $_SESSION["sesnama"];
-endif;
-
-$sesemail = "";
-if (isset($_SESSION["sesemail"])):
-  $sesemail = $_SESSION["sesemail"];
-endif;
-
-$sespesan = "";
-if (isset($_SESSION["sespesan"])):
-  $sespesan = $_SESSION["sespesan"];
-endif;
-
-$sesnim = "";
-if (isset($_SESSION["sesnim"])):
-  $sesnim = $_SESSION["sesnim"];
-endif;
-
-$sesnama_lengkap = "";
-if (isset($_SESSION["sesnama_lengkap"])):
-  $sesnama_lengkap = $_SESSION["sesemail"];
-endif;
-
-$sestempat = "";
-if (isset($_SESSION["sestempat"])):
-  $sestempat = $_SESSION["sestempat"];
-endif;
-
-$sestanggal = "";
-if (isset($_SESSION["sestanggal"])):
-  $sestanggal = $_SESSION["sestanggal"];
-endif;
-
-$seshobi = "";
-if (isset($_SESSION["seshobi"])):
-  $seshobi = $_SESSION["seshobi"];
-endif;
-
-$sespasangan = "";
-if (isset($_SESSION["sespasangan"])):
-  $sespasangan = $_SESSION["sespasangan"];
-endif;
-
-$sespekerjaan = "";
-if (isset($_SESSION["sespekerjaan"])):
-  $sespekerjaan = $_SESSION["sespekerjaan"];
-endif;
-
-$sesnama_orangtua = "";
-if (isset($_SESSION["sesnama_orangtua"])):
-  $sesnama_orangtua = $_SESSION["sesnama_orangtua"];
-endif;
-
-$sesnama_kakak = "";
-if (isset($_SESSION["sesnama_kakak"])):
-  $sesnama_kakak = $_POST["txtNama_Kakak"];
-endif;
-
-$sesnama_adik = "";
-if (isset($_SESSION["sesnama_adik"])):
-  $sesnama_adik = $_POST["txtNama_Adik"];
-endif;
 ?>
 
 <!DOCTYPE html>

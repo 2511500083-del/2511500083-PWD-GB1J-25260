@@ -17,4 +17,5 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
   <li>mengedit skrip index.php yang sedikit keliru</li>
   <li>membuat session di proses.php</li>
   <li>redirect dari proses.php ke index.php</li>
+  <li>menambahkan skrip php pada file index.php di section #about</li>
 </ol>

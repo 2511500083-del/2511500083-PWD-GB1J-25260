@@ -10,4 +10,5 @@
   <li>menambahkan skrip di file fungsi.php</li>
   <li>menambahkan fungsi formatTanggal pada file fungsi.php</li>
   <li>menambahkan fungsi untk mernder ourput biodata di fungsi.php</li>
+  <li>menambahkan fungsi di file index.php</li>
 </ol>

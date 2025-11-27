@@ -1,2 +1,6 @@
-# 2511500083-PWD-GB1J-25260
-Repository Latihan Pertemuan-1 sampai dengan Pertemuan-16 Matakuliah Pemrograman Web Dasar Kelompok GB1J Tahun Ajaran 2025/2026 Semester gasal
+# pertemuan-09
+
+<ol>
+  <li>mengextract bahan pertemuan 09 dari e learning ke folder pertemuan 09</li>
+  <li>memodif file proses.php menjadi bentuk array associative</li>
+</ol>

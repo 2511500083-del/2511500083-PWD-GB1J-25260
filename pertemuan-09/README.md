@@ -6,4 +6,6 @@
   <li>meredirect session dari proses.php yang telah berubah bentuk menjadi array associative ke index.php</li>
   <li>menambahkan baris kd baru di index.php untk menampilkan array menggunakan looping foreach</li>
   <li>mengedit index.php yg sdh diakomodir menggunakan perulangan foreach</li>
+  <li>menambahkan file fungsi.php di folder pertemuan 09</li>
+  <li>menambahkan skrip di file fungsi.php</li>
 </ol>

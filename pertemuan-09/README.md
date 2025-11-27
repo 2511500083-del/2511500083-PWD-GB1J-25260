@@ -8,4 +8,5 @@
   <li>mengedit index.php yg sdh diakomodir menggunakan perulangan foreach</li>
   <li>menambahkan file fungsi.php di folder pertemuan 09</li>
   <li>menambahkan skrip di file fungsi.php</li>
+  <li>menambahkan fungsi formatTanggal pada file fungsi.php</li>
 </ol>

@@ -17,5 +17,6 @@ Proses saya mengerjakan modul pertemuan 10 ini sebagai berikut:<br>
   <li>menambahkan skrip fungsi PHP yang mengubah karakter newline (\n) menjadi tag HTML<br></li>
   <li>mengisi baris cnama, cemail, dan cpesan pada phpmyadmin</li>
   <li>mengcopy paste dan merename file read.php menjadi read_inc.php</li>
-  <li>mengedit skrip difile read_inc.php</li> 
+  <li>mengedit skrip difile read_inc.php</li>
+  <li>menambahkan kode untuk menampilkan data dari read_inc.php di file index.php</li>
 </ol>

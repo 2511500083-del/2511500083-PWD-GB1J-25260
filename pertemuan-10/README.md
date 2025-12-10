@@ -13,4 +13,5 @@ Proses saya mengerjakan modul pertemuan 10 ini sebagai berikut:<br>
   <li>mengunduh file phpmyadmin dari bahan ajar dan mengcopy paste ke folder laragon/etc/apps</li>
   <li>mengextract file phpmyadmin dan login di webnya</li>
   <li>membuat database dengan nama db_pwd2025 di phpmyadmin</li>
+  <li>membuat tabel tbl_tamu pada database db_pwd2025 di phpmyadmin</li>
 </ol>

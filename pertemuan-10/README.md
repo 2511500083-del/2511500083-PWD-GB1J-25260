@@ -19,4 +19,5 @@ Proses saya mengerjakan modul pertemuan 10 ini sebagai berikut:<br>
   <li>mengcopy paste dan merename file read.php menjadi read_inc.php</li>
   <li>mengedit skrip difile read_inc.php</li>
   <li>menambahkan kode untuk menampilkan data dari read_inc.php di file index.php</li>
+  <li>menghapus session contact pada file index.php</li>
 </ol>

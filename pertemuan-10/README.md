@@ -10,4 +10,7 @@ Proses saya mengerjakan modul pertemuan 10 ini sebagai berikut:<br>
   <li>mengextract bahan ke dalam folder pertemuan-10</li>
   <li>menghapus file index.html dan menambahkan file baru koneksi.php di folder pertemuan-10</li>
   <li>mengetikkan skrip kode untuk mengkoneksikan ke database mysql di file koneksi.php</li>
+  <li>mengunduh file phpmyadmin dari bahan ajar dan mengcopy paste ke folder laragon/etc/apps</li>
+  <li>mengextract file phpmyadmin dan login di webnya</li>
+  <li>membuat database dengan nama db_pwd2025 di phpmyadmin</li>
 </ol>

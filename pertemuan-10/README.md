@@ -14,4 +14,5 @@ Proses saya mengerjakan modul pertemuan 10 ini sebagai berikut:<br>
   <li>mengextract file phpmyadmin dan login di webnya</li>
   <li>membuat database dengan nama db_pwd2025 di phpmyadmin</li>
   <li>membuat tabel tbl_tamu pada database db_pwd2025 di phpmyadmin</li>
+  <li>menambahkan skrip fungsi PHP yang mengubah karakter newline (\n) menjadi tag HTML<br></li>
 </ol>

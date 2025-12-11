@@ -9,4 +9,5 @@ Proses saya mengerjakan modul pertemuan 11 ini sebagai berikut:<br>
   <li>mengcopy paste dari pertemuan 10 ke pertemuan 11</li>
   <li>menambahkan skrip ke file fungsi.php</li>
   <li>menambahkan session baru di index.php</li>
+  <li>menambahkan skrip kode baru ke file index.php</li>
 </ol>

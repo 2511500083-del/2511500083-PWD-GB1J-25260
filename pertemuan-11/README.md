@@ -11,4 +11,5 @@ Proses saya mengerjakan modul pertemuan 11 ini sebagai berikut:<br>
   <li>menambahkan session baru di index.php</li>
   <li>menambahkan skrip kode baru ke file index.php</li>
   <li>merewrite file proses.php</li>
+  <li>menambahkan kolom nomor urut pada read.php di kolom pertama</li>
 </ol>

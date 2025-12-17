@@ -14,4 +14,5 @@ Proses saya mengerjakan modul pertemuan 11 ini sebagai berikut:<br>
   <li>menambahkan kolom nomor urut pada read.php di kolom pertama</li>
   <li>menambahkan minimal karakter nama dan pesan di file proses.php</li>
   <li>menambahkan captcha di file index.php</li>
+  <li>mengexport localhost.sql dan memcopy paste ke pertemuan 10 dan 11</li>
 </ol>

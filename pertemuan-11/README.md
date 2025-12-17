@@ -1,4 +1,4 @@
-# Pertemuan-10
+# Pertemuan-11
 Hari ini, Kamis 11 Desember 2025, saya:<br>
 NIM: 2511500083<br>
 Nama: Salsabilla Agustin<br>
@@ -12,4 +12,6 @@ Proses saya mengerjakan modul pertemuan 11 ini sebagai berikut:<br>
   <li>menambahkan skrip kode baru ke file index.php</li>
   <li>merewrite file proses.php</li>
   <li>menambahkan kolom nomor urut pada read.php di kolom pertama</li>
+  <li>menambahkan minimal karakter nama dan pesan di file proses.php</li>
+  <li>menambahkan captcha di file index.php</li>
 </ol>

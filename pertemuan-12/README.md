@@ -10,4 +10,5 @@ Proses saya mengerjakan modul pertemuan 11 ini sebagai berikut:<br>
   <li>menambahkan tombol Edit di read.php</li>
   <li>menambahkan penampil flash sukses & error menggunakan session di read.php</li>
   <li>menambahkan file baru bernama edit.php</li>
+  <li>menambahkan file baru bernama proses_update.php</li>
 </ol>

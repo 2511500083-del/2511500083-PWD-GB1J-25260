@@ -109,7 +109,7 @@ require 'fungsi.php';
           <label for="txtCaptcha"><span>Captcha 2 x 3 = ?</span>
             <input type="number" id="txtCaptcha" name="txtCaptcha" 
               placeholder="Jawab Pertanyaan..." required>
-              value='<?= htmlspecialchars($captcha) ?>">
+              
           </label>
 
           <button type="submit">Kirim</button>

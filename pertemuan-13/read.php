@@ -53,7 +53,7 @@ $no = 1;
                 <td><?= htmlspecialchars($row['cnama']); ?></td>
                 <td><?= htmlspecialchars($row['cemail']); ?></td>
                 <td><?= htmlspecialchars($row['cpesan']); ?></td>
-                <td><?= $row['created_at']; ?></td>
+                <td><?= $row['dcreated_at']; ?></td>
             </tr>
         <?php endwhile; ?>
     <?php else: ?>

@@ -48,6 +48,7 @@ $no = 1;
                 <td><?= $no++; ?></td>
                 <td>
                     <a href="edit.php?cid=<?= $row['cid']; ?>">Edit</a>
+                    <a href="proses_delete.php">Delete</a>
                 </td>
                 <td><?= $row['cid']; ?></td>
                 <td><?= htmlspecialchars($row['cnama']); ?></td>

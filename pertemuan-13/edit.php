@@ -30,8 +30,9 @@
     mengirim penanda error.
   */
   if (!$cid) {
-    $_SESSION['flash_error'] = 'Akses tidak valid.';
+    $_SESSION['flash_error'] = "Akses tidak valid.";
     redirect_ke('read.php');
+    exit;
   }
 
   /*
@@ -41,8 +42,9 @@
   $stmt = mysqli_prepare($conn, "SELECT cid, cnama, cemail, cpesan 
                                     FROM tbl_tamu WHERE cid = ? LIMIT 1");
   if (!$stmt) {
-    $_SESSION['flash_error'] = 'Query tidak benar.';
+    $_SESSION['flash_error'] = "Query tidak benar.";
     redirect_ke('read.php');
+    exit;
   }
 
   mysqli_stmt_bind_param($stmt, "i", $cid);
@@ -69,6 +71,7 @@
     $nama  = $old['nama'] ?? $nama;
     $email = $old['email'] ?? $email;
     $pesan = $old['pesan'] ?? $pesan;
+    $captcha = $old['captcha'] ?? '';
   }
 ?>
 
@@ -88,7 +91,7 @@
       </button>
       <nav>
         <ul>
-          <li><a href="#home">Beranda</a></li>
+          <li><a href="index.php">Beranda</a></li>
           <li><a href="#about">Tentang</a></li>
           <li><a href="#contact">Kontak</a></li>
         </ul>
@@ -110,20 +113,20 @@
 
           <label for="txtNama"><span>Nama:</span>
             <input type="text" id="txtNama" name="txtNamaEd" 
-              placeholder="Masukkan nama" required autocomplete="name"
-              value="<?= !empty($nama) ? $nama : '' ?>">
+              placeholder="Masukkan nama" required autocomplete="nama"
+              value="<?= htmlspecialchars($nama) ?>">
           </label>
 
           <label for="txtEmail"><span>Email:</span>
             <input type="email" id="txtEmail" name="txtEmailEd" 
               placeholder="Masukkan email" required autocomplete="email"
-              value="<?= !empty($email) ? $email : '' ?>">
+              value="<?= htmlspecialchars($email) ?>">
           </label>
 
           <label for="txtPesan"><span>Pesan Anda:</span>
             <textarea id="txtPesan" name="txtPesanEd" rows="4" 
               placeholder="Tulis pesan anda..." 
-              required><?= !empty($pesan) ? $pesan : '' ?></textarea>
+              required><?= htmlspecialchars($pesan) ?></textarea>
           </label>
 
           <label for="txtCaptcha"><span>Captcha 2 x 3 = ?</span>

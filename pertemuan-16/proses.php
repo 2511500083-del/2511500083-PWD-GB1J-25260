@@ -1,35 +1,52 @@
 <?php
 session_start();
-require __DIR__ . '/koneksi.php';
+require __DIR__ . './koneksi.php';
 require_once __DIR__ . '/fungsi.php';
 
 #cek method form, hanya izinkan POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
   $_SESSION['flash_error'] = 'Akses tidak valid.';
-  redirect_ke('../index.php#contact');
+  redirect_ke('index.php#contact');
 }
 
 #ambil dan bersihkan nilai dari form
-$nama_pengunjung  = bersihkan($_POST['txtNmPengunjung']  ?? '');
-$alamat_rumah = bersihkan($_POST['txtAlRmh'] ?? '');
-$tanggal_kunjungan = bersihkan($_POST['txtTglKunjunganPesan'] ?? '');
-$hobi = bersihkan($_POST['txtHobi'] ?? '');
-$asal_slta  = bersihkan($_POST['txtAsalSMA']  ?? '');
-$pekerjaan = bersihkan($_POST['txtKerja'] ?? '');
-$nama_orangtua = bersihkan($_POST['txtNmOrtu'] ?? '');
-$nama_pacar = bersihkan($_POST['txtNmPacar'] ?? '');
-$nama_mantan = bersihkan($_POST['txtNmMantan'] ?? '');
+$nama  = bersihkan($_POST['txtNama']  ?? '');
+$email = bersihkan($_POST['txtEmail'] ?? '');
+$pesan = bersihkan($_POST['txtPesan'] ?? '');
+$captcha = bersihkan($_POST['txtCaptcha'] ?? '');
 
 #Validasi sederhana
 $errors = []; #ini array untuk menampung semua error yang ada
 
-if ($nama === '') {
-  $errors[] = 'Nama wajib diisi.';
-}
+// if ($nama === '') {
+//   $errors[] = 'Nama wajib diisi.';
+// }
 
-if (mb_strlen($nama) < 3) {
-  $errors[] = 'Nama minimal 3 karakter.';
-}
+// if ($email === '') {
+//   $errors[] = 'Email wajib diisi.';
+// } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+//   $errors[] = 'Format e-mail tidak valid.';
+// }
+
+// if ($pesan === '') {
+//   $errors[] = 'Pesan wajib diisi.';
+// }
+
+// if ($captcha === '') {
+//   $errors[] = 'Pertanyaan wajib diisi.';
+// }
+
+// if (mb_strlen($nama) < 3) {
+//   $errors[] = 'Nama minimal 3 karakter.';
+// }
+
+// if (mb_strlen($pesan) < 10) {
+//   $errors[] = 'Pesan minimal 10 karakter.';
+// }
+
+// if ($captcha!=="5") {
+//   $errors[] = 'Jawaban '. $captcha.' captcha salah.';
+// }
 
 /*
 kondisi di bawah ini hanya dikerjakan jika ada error, 
@@ -37,23 +54,18 @@ simpan nilai lama dan pesan error, lalu redirect (konsep PRG)
 */
 if (!empty($errors)) {
   $_SESSION['old'] = [
-    'nama'  => $nama_pengunjung,
-    'alamat' => $alamat_rumah,
-    'tanggal_kunjungan' => $tanggal_kunjungan,
-    'hobi' => $hobi,
-    'asal_slta' => $asal_slta,
-    'pekerjaan' => $pekerjaan,
-    'nama_ortu' => $nama_orangtua,
-    'nama_pcr' => $nama_pacar,
-    'nama_mntan' => $nama_mantan
+    'nama'  => $nama,
+    'email' => $email,
+    'pesan' => $pesan,
+    'captcha' => $captcha,
   ];
 
   $_SESSION['flash_error'] = implode('<br>', $errors);
-  redirect_ke('../index.php#contact');
+  redirect_ke('index.php#contact');
 }
 
 #menyiapkan query INSERT dengan prepared statement
-$sql = "INSERT INTO tbl_pengunjung (nama, alamat, tanggal_kunjungan, hobi, asal_slta, pekerjaan, nama_ortu, nama_pcr, nama_mntan) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+$sql = "INSERT INTO tbl_tamu (cnama, cemail, cpesan) VALUES (?, ?, ?)";
 $stmt = mysqli_prepare($conn, $sql);
 
 if (!$stmt) {
@@ -62,7 +74,7 @@ if (!$stmt) {
   redirect_ke('index.php#contact');
 }
 #bind parameter dan eksekusi (s = string)
-mysqli_stmt_bind_param($stmt, "sssssssss", $nama_pengunjung, $alamat_rumah, $tanggal_kunjungan, $hobi, $asal_slta, $pekerjaan, $nama_orangtua, $nama_pacar, $nama_mantan);
+mysqli_stmt_bind_param($stmt, "sss", $nama, $email, $pesan);
 
 if (mysqli_stmt_execute($stmt)) { #jika berhasil, kosongkan old value, beri pesan sukses
   unset($_SESSION['old']);
@@ -70,23 +82,18 @@ if (mysqli_stmt_execute($stmt)) { #jika berhasil, kosongkan old value, beri pesa
   redirect_ke('index.php#contact'); #pola PRG: kembali ke form / halaman home
 } else { #jika gagal, simpan kembali old value dan tampilkan error umum
   $_SESSION['old'] = [
-    'nama'  => $nama_pengunjung,
-    'alamat' => $alamat_rumah,
-    'tanggal_kunjungan' => $tanggal_kunjungan,
-    'hobi' => $hobi,
-    'asal_slta' => $asal_slta,
-    'pekerjaan' => $pekerjaan,
-    'nama_ortu' => $nama_orangtua,
-    'nama_pcr' => $nama_pacar,
-    'nama_mntan' => $nama_mantan
+    'nama'  => $nama,
+    'email' => $email,
+    'pesan' => $pesan,
+    'captcha' => $captcha,
   ];
   $_SESSION['flash_error'] = 'Data gagal disimpan. Silakan coba lagi.';
-  redirect_ke('../index.php#contact');
+  redirect_ke('index.php#contact');
 }
 #tutup statement
 mysqli_stmt_close($stmt);
 
-$arrcontact = [
+$arrBiodata = [
   "kodepen" => $_POST["txtKodePen"] ?? "",
   "nama" => $_POST["txtNmPengunjung"] ?? "",
   "alamat" => $_POST["txtAlRmh"] ?? "",
@@ -98,6 +105,6 @@ $arrcontact = [
   "pacar" => $_POST["txtNmPacar"] ?? "",
   "mantan" => $_POST["txtNmMantan"] ?? ""
 ];
-$_SESSION["contact"] = $arrcontact;
+$_SESSION["biodata"] = $arrBiodata;
 
-header("location: ../index.php#contact");
+header("location: index.php#about");

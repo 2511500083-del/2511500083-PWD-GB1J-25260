@@ -8,4 +8,5 @@ Proses saya mengerjakan UAS ini sebagai berikut:<br>
 <ol>
     <li> mengextract bahan uas dari e learning</li>
     <li> membuat tabel baru di database</li>
+    <li> membuat file proses_pengunjung.php</li>
 </ol>
